@@ -1,0 +1,13 @@
+<div class="col-md-4 card">
+  <form #f="ngForm" (ngSubmit)="onLogin(f.value)" class="text-center border border-light p-5" action="#!">
+    <div class="form-group">
+      <label class="control-label">Login:</label>
+      <input type="text" name="username" ngModel class="form-control mb-4" id="defaultLoginFormEmail">
+    </div>
+    <div class="form-group">
+      <label class="control-label">Password:</label>
+      <input type="password" id="defaultLoginFormPassword" name="password" ngModel class="form-control mb-4">
+    </div>
+    <button type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
+  </form>
+</div>
